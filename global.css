@@ -1,112 +1,169 @@
 *{
-	  box-sizing: border-box;
-	  -webkit-font-smoothing: antialiased;
-	  text-rendering: optimizeLegibility;
-	  -moz-osx-font-smoothing: grayscale;
-	}
-	a {text-decoration: none;}
-	body{
-		font-size: 100%;
-	}
-	@font-face {font-family: 'Frank'; src: url('FatFrank.otf');}
-	@font-face {font-family: 'Geo'; src: url('GeomancyB.otf');}
-	@font-face {font-family: 'GeoLight'; src: url('GeomancyH.otf');}
-	@font-face {font-family: 'Awesome'; src: url('FontAwesome.otf');}
-	@font-face {font-family: 'SubwayIcon'; src: url('CittadinoSymbols.otf');}
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
 
-	.content-wrapper{
-	  background-size: cover;
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  height: 100vh;
-	  position: relative;
-	}
+a {text-decoration: none;}
+body{
+	font-size: 100%;
+}
+@font-face {font-family: 'Frank'; src: url('FatFrank.otf');}
+@font-face {font-family: 'Geo'; src: url('GeomancyB.otf');}
+@font-face {font-family: 'GeoLight'; src: url('GeomancyH.otf');}
+@font-face {font-family: 'Awesome'; src: url('FontAwesome.otf');}
+@font-face {font-family: 'SubwayIcon'; src: url('CittadinoSymbols.otf');}
 
-	.brand{
-	  font-family: 'Geo', sans-serif;
-	  font-size: 12em;
-	  margin: 0px auto 20px;
-	  display: block;
-	  position: relative;
-	}
+.content-wrapper{
+  background-size: cover;
+/*  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+*/  position: relative;
+}
 
-	.brandLight{
-	  font-family: 'GeoLight', sans-serif;
-	  font-size: 7em;
-	  margin-top:-60px;
-	}
+.brand{
+  font-family: 'Geo', sans-serif;
+  font-size: 12em;
+  margin: 0px auto 20px;
+  display: block;
+  position: relative;
+}
 
-	/*.white{
-		color: #fff;
-	    font-size: 1em;
-	    left: 0;
-	    position: absolute;
-	    top: 60px
-	}*/
+.brandLight{
+  font-family: 'GeoLight', sans-serif;
+  font-size: 7em;
+  margin-top:-60px;
+}
 
-	.yonge-line-color {color: #fbd000;}
-	.bloor-line-color {color: #26aa50;}
-	.scarb-line-color {color: #3795d6;}
-	.shepp-line-color {color: #b0147a;}
-	.lrail-line-color {color: #f1872a;}
+/*.white{
+	color: #fff;
+    font-size: 1em;
+    left: 0;
+    position: absolute;
+    top: 60px
+}*/
+
+.yonge-line-color {color: #fbd000;}
+.bloor-line-color {color: #26aa50;}
+.scarb-line-color {color: #3795d6;}
+.shepp-line-color {color: #b0147a;}
+.lrail-line-color {color: #f1872a;}
 
 /*----------Social/Home and Subway Icon Fonts------------------*/
 
-	.container{
-		float:left;
-		padding: 10px;
-	}
+.container{
+	float:left;
+	padding: 10px;
+}
 
-	.fa-home:before {
-  		display: inline-block;
-  		font-family: 'Awesome', sans-serif;
-  		content: "\f015";
-  		color: #999;
-	}
-	.fa-twitter:before {
+.fa-home:before {
 		display: inline-block;
-  		font-family: 'Awesome', sans-serif;
-  		content: "\f099";
-	}
-	.fa-facebook:before {
+		font-family: 'Awesome', sans-serif;
+		content: "\f015";
+		color: #999;
+}
+.fa-twitter:before {
+	display: inline-block;
+		font-family: 'Awesome', sans-serif;
+		content: "\f099";
+}
+.fa-facebook:before {
+	display: inline-block;
+		font-family: 'Awesome', sans-serif;
+		content: "\f09a";
+}
+.subway:before {
 		display: inline-block;
-  		font-family: 'Awesome', sans-serif;
-  		content: "\f09a";
-	}
-	.subway:before {
-  		display: inline-block;
-  		font-family: 'SubwayIcon', sans-serif;
-  		content: '\V';
-  		color: #999;
-	}
-	
+		font-family: 'SubwayIcon', sans-serif;
+		content: '\V';
+		color: #999;
+}
+
 
 /*----------Circle and Numbers---------------------------------*/
 
-	.fa-circle:before {
-		display: inline-block;
-		font-size: 12em;
-		font-family: 'Awesome', sans-serif;
-  		content: "\f111";
-	}
+.fa-circle:before {
+	display: inline-block;
+	font-size: 12em;
+	font-family: 'Awesome', sans-serif;
+		content: "\f111";
+}
 
-	.numbers {
-		margin-left:-20px;
-		font-size: 6em;
-		color: #444;
+.numbers {
+	margin-left:-20px;
+	font-size: 6em;
+	color: #444;
 
-	}
+}
+
+/*----------Maps ---------------------------------*/
+.fancybox-wrap {
+	width: 90% !important;
+	top: 25% !important;
+	left: 0 !important;
+}
+.fancybox-inner {
+	width: 100% !important;
+}
+.map{
+	display: none;
+	font-family: 'Frank', sans-serif;
+}
+
+.map ul {
+	list-style: none;
+	margin-top: 30px;
+}
+.map ul li {
+	display: inline;
+	position: relative;
+}
+.map ul li span {
+	display: none;
+	font-family: sans-serif;
+	position: absolute;
+	top: -26px;
+	left: -4px;
+	font-size: 12px;
+	background: #fff;
+	width: 80px;
+}
+.map ul li:before {
+	content: "O";
+}
+.map ul li:after {
+	content: "-";
+}
+.map ul li:last-child:after {
+	content: "";
+}
+.map ul li:hover span{
+	display: inline-block;
+	color: #f00;
+}
+.map ul li:hover{
+	color: #f00;
+}
 
 /*----------Media Q ---------------------------------*/
 
-	@media (max-width: 820px){
-		.brand{font-size: 8em;}
-		.brandLight{font-size: 5em;} 
-	}
+@media (max-width: 820px){
+	.brand{font-size: 8em;}
+	.brandLight{font-size: 5em;} 
+}
 
 
-	@media (max-width: 560px){
-		.brand{font-size: 5em;}
-		.brandLight{font-size: 3em;margin-top:-40px;} 
-	}
+@media (max-width: 560px){
+	.brand{font-size: 5em;}
+	.brandLight{font-size: 3em;margin-top:-40px;} 
+}
