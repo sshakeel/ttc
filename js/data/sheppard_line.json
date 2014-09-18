@@ -1,0 +1,7 @@
+[
+    { "id" : "north_york_centre_station", "title" : "North York Centre Station" },
+    { "id" : "bayview_station", "title" : "Bayview Station" },
+    { "id" : "bessarion_station", "title" : "Bessarion Station" },
+    { "id" : "leslie_station", "title" : "Leslie Station" },
+    { "id" : "don_mills_station", "title" : "Don Mills Station" }
+  ]
