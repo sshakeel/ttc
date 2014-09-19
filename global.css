@@ -24,12 +24,34 @@ body{
 
 .content-wrapper{
   background-size: cover;
-/*  display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-*/  position: relative;
+  position: relative;
 }
+.bgText{
+  font-family: 'GeoLight', sans-serif;
+  font-size: 14em;
+  color: #f4f4f4;
+  position: absolute;
+  top: -100px;
+  left:100px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+.bgText2{
+  font-family: 'GeoLight', sans-serif;
+  font-size: 14em;
+  color: #f8f8f8;
+  position: absolute;
+  top: -250px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+}
+.hide{overflow-x:hidden;}
 
 .brand{
   font-family: 'Geo', sans-serif;
@@ -45,86 +67,132 @@ body{
   margin-top:-60px;
 }
 
-/*.white{
-	color: #fff;
-    font-size: 1em;
-    left: 0;
-    position: absolute;
-    top: 60px
-}*/
-
 .yonge-line-color {color: #fbd000;}
 .bloor-line-color {color: #26aa50;}
 .scarb-line-color {color: #3795d6;}
 .shepp-line-color {color: #b0147a;}
 .lrail-line-color {color: #f1872a;}
+.other-line-color {color: #8ecc30;}
+
+.row{
+		clear: both;
+	}
 
 /*----------Social/Home and Subway Icon Fonts------------------*/
 
-.container{
-	float:left;
-	padding: 10px;
+.social{
+	float:right;
+	font-size: 1.2em;
+	display: inline-block;
+	font-family: 'Awesome', sans-serif;
+	padding: 0 2px;
+	margin-right:5px;
+}
+.fa-twitter-square:before {
+	content: "\f081";
+	color:#3cf;
+}
+.fa-facebook-square:before {
+	content: "\f082";
+	color: #3b5998;
 }
 
 .fa-home:before {
-		display: inline-block;
-		font-family: 'Awesome', sans-serif;
-		content: "\f015";
-		color: #999;
-}
-.fa-twitter:before {
 	display: inline-block;
-		font-family: 'Awesome', sans-serif;
-		content: "\f099";
-}
-.fa-facebook:before {
-	display: inline-block;
-		font-family: 'Awesome', sans-serif;
-		content: "\f09a";
-}
-.subway:before {
-		display: inline-block;
-		font-family: 'SubwayIcon', sans-serif;
-		content: '\V';
-		color: #999;
+	font-family: 'Awesome', sans-serif;
+	content: "\f015";
+	color: #999;
+	padding: 0 4px;
+	font-size: 1.2em;
 }
 
+/*----------Large BUS and BIKE Icons -------------------------*/
+
+	.subway:before {
+  		display: inline-block;
+  		font-family: 'SubwayIcon', sans-serif;
+  		content: '\V';
+  		color: #fff;
+  		padding: 0 4px;
+  		font-size: 0.3em;
+  		opacity: 0.5em;
+  		position: absolute;
+		top: -20px;
+		left: 30px;
+	}
+	.bike:before {
+  		display: inline-block;
+  		font-family: 'SubwayIcon', sans-serif;
+  		content: '4';
+  		color: #444;
+  		padding: 0 4px;
+  		font-size: 6em;
+  		position: absolute;
+		top: 40px;
+		left: 30px;
+	}
+	.bus:before {
+  		display: inline-block;
+  		font-family: 'SubwayIcon', sans-serif;
+  		content: 'F';
+  		color: #444;
+  		padding: 0 4px;
+  		font-size: 6em;
+  		position: absolute;
+		top: 45px;
+		left: 50px;
+	}
 
 /*----------Circle and Numbers---------------------------------*/
 
-.fa-circle:before {
-	display: inline-block;
-	font-size: 12em;
-	font-family: 'Awesome', sans-serif;
-		content: "\f111";
-}
+	.container{
+		float:left;
+		margin:10px;
+		position: relative;
+	}
+	.fa-circle:before {
+		display: inline-block;
+		font-size: 12em;
+		font-family: 'Awesome', sans-serif;
+  		content: "\f111";
+	}
+	.numbers {
+		font-family: 'Frank', sans-serif;
+		position: absolute;
+		top: 45px;
+		left: 34px;
+		font-size: 6em;
+		color: #fff;
+	}
+	.secondary{
+		font-family: 'Frank', sans-serif;
+		position: absolute;
+		top: 85px;
+		left: 10px;
+		font-size: 0.25em;
+		color: #fff;
+		opacity: .25;
+	}
+	.sm{
+		font-size: 0.20em;
+	}
+	.fade {
+	   opacity: 1;
+	   transition: opacity .25s ease-in-out;
+	   -moz-transition: opacity .25s ease-in-out;
+	   -webkit-transition: opacity .25s ease-in-out;
+	   cursor: pointer;
+   	}
+   	.fade:hover {
+      opacity: 0.7;
+      }
 
-.fa-circle a {
-	font-size: 6em;
-	display: inline;
-	text-align: center;
-	 margin-left: -65%; 
-	color: #fff;
-	position: relative;
-}
-.fa-circle a:hover, .fa-circle a:active, .fa-circle a:visited {
-	color: #fff;
-}
-.fa-circle a span{
-	display: inline;
-	position: absolute;
-	top: -30px;
-	left: -10px;
-}
-.fa-circle a span.double-char{
-	left: -35px;
-}
-.numbers {
-	margin-left:-20px;
-	font-size: 6em;
-	color: #444;
-
-}
+    .fa-circle-o:before {
+    	display: inline-block;
+		font-size: 12em;
+		font-family: 'Awesome', sans-serif;
+  		content: "\f10c";
+	}
 
 /*----------Maps ---------------------------------*/
 .fancybox-wrap {
@@ -175,15 +243,39 @@ body{
 	color: #f00;
 }
 
-/*----------Media Q ---------------------------------*/
+*----------Media Q ---------------------------------*/
 
-@media (max-width: 820px){
-	.brand{font-size: 8em;}
-	.brandLight{font-size: 5em;} 
-}
+	@media (max-width: 820px){
+		.brand{font-size: 8em;}
+		.brandLight{font-size: 5em;} 
+
+		.content-wrapper {
+		  background-size: cover;
+		  display: inline-block;
+		  align-items: center;
+		  justify-content: center;
+		  height: none;
+		}
+
+		.bgText{
+			font-size: 12em;
+		}
+	}
 
 
-@media (max-width: 560px){
-	.brand{font-size: 5em;}
-	.brandLight{font-size: 3em;margin-top:-40px;} 
-}
+	@media (max-width: 560px){
+		.brand{font-size: 5em;}
+		.brandLight{font-size: 3em;margin-top:-40px;} 
+
+		.content-wrapper {
+		  background-size: cover;
+		  display: inline-block;
+		  align-items: center;
+		  justify-content: center;
+		  height: none;
+		}
+		.bgText{
+			display: none;
+		}
+	}
+

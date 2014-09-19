@@ -20,22 +20,31 @@
 </head>
 
 <body>
+	<span class="bgText hide">TORONTO SUBWAY BICYCLE BUS ROUTES</span>
+	<span class="bgText2 hide">TORONTO SUBWAY BICYCLE BUS ROUTES</span>
 	<nav>
 		<a href="#" class="fa-home"></a>
-		<a href="#" class="subway"></a>
+		<!-- <a href="#" class="subway"></a> -->
+
+		<a href="#" class="social fa-twitter-square"></a>
+		<a href="#" class="social fa-facebook-square"></a>
 	</nav>
 	<div class="content-wrapper clearfix">
 		<div class="clearfix">
 		
 	    	<span class="brand">TORONTO</span>
-	    	<span class="brand brandLight">Transit Guide</span>
-	    
-		   	<div class="container fa-circle yonge-line-color"><a href="#yongeMap" class="fancybox stations"><span class="">Y</span></a></div>
-		    <div class="container fa-circle bloor-line-color"><a href="#bloorMap" class="fancybox stations"><span class="">B</span></a></div>
-		    <div class="container fa-circle scarb-line-color"><a href="#scarMap" class="fancybox stations"><span class="double-char">SC</span></a></div>
-		    <div class="container fa-circle shepp-line-color"><a href="#sheppardMap" class="fancybox stations"><span class="double-char">SH</span></a></div>
-		    <div class="container fa-circle lrail-line-color"><a href="" class="fancybox stations"><span class="double-char">LR</span></a></div>	
+	    	<span class="brand brandLight">Transit Guide</span>	
+	  		
+			<div class="container fa-circle yonge-line-color fade"><a href="#yongeMap" class="numbers fancybox stations">1Y <span class="secondary">YONGE</span></a></div>
+			<div class="container fa-circle bloor-line-color fade"><a href="#bloorMap" class="numbers fancybox stations">2B <span class="secondary">BLOOR</span></a></div>
+			<div class="container fa-circle scarb-line-color fade"><a href="#scarMap" class="numbers fancybox stations">3S <span class="secondary">RT</span></a></div>
+			<div class="container fa-circle shepp-line-color fade"><a href="#sheppardMap" class="numbers fancybox stations">4S <span class="secondary sm">SHEPPARD</span></a></div>
+			<div class="container fa-circle lrail-line-color fade"><a href="" class="numbers">LR</a></div>
+
+	  		<div class="row container fa-circle-o other-line-color fade"><span class="bike"></span></div>
+			<div class="container fa-circle-o other-line-color fade"><span class="bus"></span></div>
 	  	</div>
+
 	</div>
 	<div id="bloorMap" class="map bloor bloor-line-color clearfix" ng-controller="bloorController">
 		<h2>Bloor Line</h2>
