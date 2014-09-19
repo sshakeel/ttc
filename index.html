@@ -30,14 +30,15 @@
 	    	<span class="brand">TORONTO</span>
 	    	<span class="brand brandLight">Transit Guide</span>
 	    
-		   	<div class="container fa-circle yonge-line-color"><a href="#yongeMap" class="fancybox stations"><span class="">1</span></a></div>
-		    <div class="container fa-circle bloor-line-color"><a href="#bloorMap" class="fancybox stations"><span class="">2</span></a></div>
-		    <div class="container fa-circle scarb-line-color"><a href="#scarMap" class="fancybox stations"><span class="">3</span></a></div>
-		    <div class="container fa-circle shepp-line-color"><a href="#sheppardMap" class="fancybox stations"><span class="">4</span></a></div>
-		    <div class="container fa-circle lrail-line-color"><a href="" class="fancybox stations"><span class="">LR</span></a></div>	
+		   	<div class="container fa-circle yonge-line-color"><a href="#yongeMap" class="fancybox stations"><span class="">Y</span></a></div>
+		    <div class="container fa-circle bloor-line-color"><a href="#bloorMap" class="fancybox stations"><span class="">B</span></a></div>
+		    <div class="container fa-circle scarb-line-color"><a href="#scarMap" class="fancybox stations"><span class="double-char">SC</span></a></div>
+		    <div class="container fa-circle shepp-line-color"><a href="#sheppardMap" class="fancybox stations"><span class="double-char">SH</span></a></div>
+		    <div class="container fa-circle lrail-line-color"><a href="" class="fancybox stations"><span class="double-char">LR</span></a></div>	
 	  	</div>
 	</div>
 	<div id="bloorMap" class="map bloor bloor-line-color clearfix" ng-controller="bloorController">
+		<h2>Bloor Line</h2>
 		<ul>
 			<li ng-repeat="station in bloor_line">
 				<span>{{station.title}}</span>
@@ -45,6 +46,7 @@
 		</ul>
 	</div>
 	<div id="sheppardMap" class="map sheppard shepp-line-color clearfix" ng-controller="sheppardController">
+		<h2>Sheppard Line</h2>
 		<ul>
 			<li ng-repeat="station in sheppard_line">
 				<span>{{station.title}}</span>
@@ -52,6 +54,7 @@
 		</ul>
 	</div>
 	<div id="yongeMap" class="map yonge yonge-line-color clearfix" ng-controller="yongeController">
+		<h2>Yonge Line</h2>
 		<ul>
 			<li ng-repeat="station in yonge_line">
 				<span>{{station.title}}</span>
@@ -59,6 +62,7 @@
 		</ul>
 	</div>
 	<div id="scarMap" class="map scar scarb-line-color clearfix" ng-controller="scarController">
+		<h2>Scarborough Line</h2>
 		<ul>
 			<li ng-repeat="station in scar_line">
 				<span>{{station.title}}</span>

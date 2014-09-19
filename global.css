@@ -99,6 +99,26 @@ body{
 		content: "\f111";
 }
 
+.fa-circle a {
+	font-size: 6em;
+	display: inline;
+	text-align: center;
+	 margin-left: -65%; 
+	color: #fff;
+	position: relative;
+}
+.fa-circle a:hover, .fa-circle a:active, .fa-circle a:visited {
+	color: #fff;
+}
+.fa-circle a span{
+	display: inline;
+	position: absolute;
+	top: -30px;
+	left: -10px;
+}
+.fa-circle a span.double-char{
+	left: -35px;
+}
 .numbers {
 	margin-left:-20px;
 	font-size: 6em;
@@ -108,9 +128,9 @@ body{
 
 /*----------Maps ---------------------------------*/
 .fancybox-wrap {
-	width: 90% !important;
+	width: 80% !important;
 	top: 25% !important;
-	left: 0 !important;
+	left: 5% !important;
 }
 .fancybox-inner {
 	width: 100% !important;

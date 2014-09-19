@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ '.', null ]
+5 verbose cache add name=undefined spec="." args=[".",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: '.',
+6 verbose parsed url   path: '.',
+6 verbose parsed url   href: '.' }
+7 silly lockFile 3a52ce78- .
+8 verbose lock . /Users/sshakeel/.npm/3a52ce78-.lock
+9 verbose tar pack [ '/Users/sshakeel/.npm/ttc/0.0.0/package.tgz', '.' ]
+10 verbose tarball /Users/sshakeel/.npm/ttc/0.0.0/package.tgz
+11 verbose folder .
+12 info prepublish ttc@0.0.0
+13 silly lockFile 1f1177db-tar tar://.
+14 verbose lock tar://. /Users/sshakeel/.npm/1f1177db-tar.lock
+15 silly lockFile 57809f8e-hakeel-npm-ttc-0-0-0-package-tgz tar:///Users/sshakeel/.npm/ttc/0.0.0/package.tgz
+16 verbose lock tar:///Users/sshakeel/.npm/ttc/0.0.0/package.tgz /Users/sshakeel/.npm/57809f8e-hakeel-npm-ttc-0-0-0-package-tgz.lock
+17 silly lockFile 1f1177db-tar tar://.
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 57809f8e-hakeel-npm-ttc-0-0-0-package-tgz tar:///Users/sshakeel/.npm/ttc/0.0.0/package.tgz
+20 silly lockFile 57809f8e-hakeel-npm-ttc-0-0-0-package-tgz tar:///Users/sshakeel/.npm/ttc/0.0.0/package.tgz
+21 silly lockFile 6b7a0756-s-sshakeel-npm-ttc-0-0-0-package /Users/sshakeel/.npm/ttc/0.0.0/package
+22 verbose lock /Users/sshakeel/.npm/ttc/0.0.0/package /Users/sshakeel/.npm/6b7a0756-s-sshakeel-npm-ttc-0-0-0-package.lock
+23 silly lockFile 6b7a0756-s-sshakeel-npm-ttc-0-0-0-package /Users/sshakeel/.npm/ttc/0.0.0/package
+24 silly lockFile 6b7a0756-s-sshakeel-npm-ttc-0-0-0-package /Users/sshakeel/.npm/ttc/0.0.0/package
+25 silly lockFile 3a52ce78- .
+26 silly lockFile 3a52ce78- .
+27 silly resolved [ { name: 'ttc',
+27 silly resolved     version: '0.0.0',
+27 silly resolved     description: 'ttc challenge app/site',
+27 silly resolved     devDependencies:
+27 silly resolved      { 'gulp-rename': '~1.2.0',
+27 silly resolved        'gulp-concat': '~2.4.1',
+27 silly resolved        'gulp-connect': '^2.0.6',
+27 silly resolved        'gulp-uglify': '~1.0.1',
+27 silly resolved        'gulp-jshint': '~1.8.4',
+27 silly resolved        'gulp-sass': '~0.7.3',
+27 silly resolved        'gulp-util': '^2.2.20' },
+27 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+27 silly resolved     author: { name: 'salman shakeel' },
+27 silly resolved     license: 'ISC',
+27 silly resolved     gitHead: '702cba78ccf5db9587d22802312f09ff2d487e1a',
+27 silly resolved     readme: 'ERROR: No README data found!',
+27 silly resolved     _id: 'ttc@0.0.0',
+27 silly resolved     _shasum: '0ebe8e62433eb7eea041ca972dc26d5039be1d44',
+27 silly resolved     _from: '.' } ]
+28 info install ttc@0.0.0 into /usr/local/lib
+29 info installOne ttc@0.0.0
+30 verbose lib/node_modules/ttc unbuild
+31 verbose tar unpack /Users/sshakeel/.npm/ttc/0.0.0/package.tgz
+32 silly lockFile 55ef70e2-r-usr-local-lib-node-modules-ttc tar:///usr/local/lib/node_modules/ttc
+33 verbose lock tar:///usr/local/lib/node_modules/ttc /Users/sshakeel/.npm/55ef70e2-r-usr-local-lib-node-modules-ttc.lock
+34 silly lockFile 57809f8e-hakeel-npm-ttc-0-0-0-package-tgz tar:///Users/sshakeel/.npm/ttc/0.0.0/package.tgz
+35 verbose lock tar:///Users/sshakeel/.npm/ttc/0.0.0/package.tgz /Users/sshakeel/.npm/57809f8e-hakeel-npm-ttc-0-0-0-package-tgz.lock
+36 silly gunzTarPerm modes [ '755', '644' ]
+37 error Error: EACCES, mkdir '/usr/local/lib/node_modules/ttc'
+37 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/ttc']
+37 error   errno: 3,
+37 error   code: 'EACCES',
+37 error   path: '/usr/local/lib/node_modules/ttc',
+37 error   fstream_type: 'Directory',
+37 error   fstream_path: '/usr/local/lib/node_modules/ttc',
+37 error   fstream_class: 'DirWriter',
+37 error   fstream_stack:
+37 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+37 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+37 error      'Object.oncomplete (fs.js:107:15)' ] }
+38 error Please try running this command again as root/Administrator.
+39 error System Darwin 13.3.0
+40 error command "node" "/usr/local/bin/npm" "install" "-g"
+41 error cwd /Users/sshakeel/sshakeel.ca/ttc
+42 error node -v v0.10.32
+43 error npm -v 1.4.28
+44 error path /usr/local/lib/node_modules/ttc
+45 error fstream_path /usr/local/lib/node_modules/ttc
+46 error fstream_type Directory
+47 error fstream_class DirWriter
+48 error code EACCES
+49 error errno 3
+50 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/ttc'
+51 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+51 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+51 error fstream_stack Object.oncomplete (fs.js:107:15)
+52 verbose exit [ 3, true ]
