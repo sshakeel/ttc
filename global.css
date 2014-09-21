@@ -52,7 +52,7 @@ body{
   -ms-transform: rotate(-135deg);
 }
 .hide{overflow-x:hidden;}
-
+.invisible {display: none;}
 .brand{
   font-family: 'Geo', sans-serif;
   font-size: 12em;
@@ -67,12 +67,12 @@ body{
   margin-top:-60px;
 }
 
-.yonge-line-color {color: #fbd000;}
-.bloor-line-color {color: #26aa50;}
-.scarb-line-color {color: #3795d6;}
-.shepp-line-color {color: #b0147a;}
-.lrail-line-color {color: #f1872a;}
-.other-line-color {color: #8ecc30;}
+.yonge-line-color {color: #fbd000; fill: #fbd000;}
+.bloor-line-color {color: #26aa50; fill: #26aa50;}
+.scarb-line-color {color: #3795d6; fill: #3795d6;}
+.shepp-line-color {color: #b0147a; fill: #b0147a;}
+.lrail-line-color {color: #f1872a; fill: #f1872a;}
+.other-line-color {color: #8ecc30; fill: #8ecc30;}
 
 .row{
 		clear: both;
@@ -159,7 +159,7 @@ body{
 	.numbers {
 		font-family: 'Frank', sans-serif;
 		position: absolute;
-		top: 45px;
+		top: 25px;
 		left: 34px;
 		font-size: 6em;
 		color: #fff;
@@ -167,7 +167,7 @@ body{
 	.secondary{
 		font-family: 'Frank', sans-serif;
 		position: absolute;
-		top: 85px;
+		top: 100px;
 		left: 10px;
 		font-size: 0.25em;
 		color: #fff;
@@ -196,52 +196,62 @@ body{
 
 /*----------Maps ---------------------------------*/
 .fancybox-wrap {
-	width: 80% !important;
-	top: 25% !important;
+	width: 90% !important;
+	top: 5% !important;
 	left: 5% !important;
+	background: #fff;
 }
 .fancybox-inner {
 	width: 100% !important;
+	overflow: hidden !important;
+}
+.fancybox-skin, .fancybox-outer {
+	overflow-y:hidden;
+}
+.fancybox-overlay {
+	background: #f8f8f8;
+	opacity: 0.9;
+}
+.fancybox-close {
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 8040;
+	font-size: 38px;
+	font-family: 'Frank', sans-serif;
+	color: #999;
 }
 .map{
 	display: none;
 	font-family: 'Frank', sans-serif;
 }
 
-.map ul {
-	list-style: none;
-	margin-top: 30px;
+
+text{
+	fill: #aaa;
 }
-.map ul li {
-	display: inline;
+tspan.station{
 	position: relative;
 }
-.map ul li span {
+tspan.station:hover{
+	cursor: default;
+}
+tspan.station tspan {
 	display: none;
 	font-family: sans-serif;
 	position: absolute;
-	top: -26px;
-	left: -4px;
-	font-size: 12px;
-	background: #fff;
-	width: 80px;
+
 }
-.map ul li:before {
-	content: "O";
+
+tspan.station:hover tspan {
+	display: inline;
+
 }
-.map ul li:after {
-	content: "-";
-}
-.map ul li:last-child:after {
-	content: "";
-}
-.map ul li:hover span{
-	display: inline-block;
-	color: #f00;
-}
-.map ul li:hover{
-	color: #f00;
-}
+
+
 
 *----------Media Q ---------------------------------*/
 

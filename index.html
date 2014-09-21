@@ -35,50 +35,80 @@
 	    	<span class="brand">TORONTO</span>
 	    	<span class="brand brandLight">Transit Guide</span>	
 	  		
-			<div class="container fa-circle yonge-line-color fade"><a href="#yongeMap" class="numbers fancybox stations">1Y <span class="secondary">YONGE</span></a></div>
-			<div class="container fa-circle bloor-line-color fade"><a href="#bloorMap" class="numbers fancybox stations">2B <span class="secondary">BLOOR</span></a></div>
-			<div class="container fa-circle scarb-line-color fade"><a href="#scarMap" class="numbers fancybox stations">3S <span class="secondary">RT</span></a></div>
-			<div class="container fa-circle shepp-line-color fade"><a href="#sheppardMap" class="numbers fancybox stations">4S <span class="secondary sm">SHEPPARD</span></a></div>
-			<div class="container fa-circle lrail-line-color fade"><a href="" class="numbers">LR</a></div>
+			<div id="yongeButton" class="container fa-circle yonge-line-color fade"><a  href="#map" class="numbers fancybox stations">1Y <span class="secondary">YONGE</span></a></div>
+			<div class="container fa-circle bloor-line-color fade"><a id="bloorButton" href="#map" class="numbers fancybox stations">2B <span class="secondary">BLOOR</span></a></div>
+			<div class="container fa-circle scarb-line-color fade"><a id="scarButton" href="#map" class="numbers fancybox stations">3S <span class="secondary">RT</span></a></div>
+			<div class="container fa-circle shepp-line-color fade"><a id="sheppardButton" href="#map" class="numbers fancybox stations">4S <span class="secondary sm">SHEPPARD</span></a></div>
+			<div class="container fa-circle lrail-line-color fade"><a id="lrButton" href="" class="numbers">LR</a></div>
 
 	  		<div class="row container fa-circle-o other-line-color fade"><span class="bike"></span></div>
 			<div class="container fa-circle-o other-line-color fade"><span class="bus"></span></div>
 	  	</div>
 
 	</div>
-	<div id="bloorMap" class="map bloor bloor-line-color clearfix" ng-controller="bloorController">
-		<h2>Bloor Line</h2>
-		<ul>
-			<li ng-repeat="station in bloor_line">
-				<span>{{station.title}}</span>
+	<div id="map" class="map clearfix" ng-controller="subwayController">
+		<!-- <h2>Bloor Line</h2> -->
+		<!-- <ul>
+			<li ng-repeat="station in bloor_line" >
+				<a href="#" style="left: {{$index + 7}}px; top: 150px;">
+					<span>{{station.title}}</span>
+				</a>
 			</li>
-		</ul>
-	</div>
-	<div id="sheppardMap" class="map sheppard shepp-line-color clearfix" ng-controller="sheppardController">
-		<h2>Sheppard Line</h2>
-		<ul>
-			<li ng-repeat="station in sheppard_line">
-				<span>{{station.title}}</span>
-			</li>
-		</ul>
-	</div>
-	<div id="yongeMap" class="map yonge yonge-line-color clearfix" ng-controller="yongeController">
-		<h2>Yonge Line</h2>
-		<ul>
-			<li ng-repeat="station in yonge_line">
-				<span>{{station.title}}</span>
-			</li>
-		</ul>
-	</div>
-	<div id="scarMap" class="map scar scarb-line-color clearfix" ng-controller="scarController">
-		<h2>Scarborough Line</h2>
-		<ul>
-			<li ng-repeat="station in scar_line">
-				<span>{{station.title}}</span>
-			</li>
-		</ul>
+			
+		</ul> -->
+		<svg width="100%" height="500px" >
+			<text ng-repeat="station in bloor_line" id="bloor_map" class="bloor-line-color">
+				<tspan x="{{station.x * $index}}%" y="{{station.y}}%" font-family="Frank" font-size="14" class="station">
+		    		O
+		    		<tspan style="baseline-shift: super;">
+			  			{{station.title}}
+			  		</tspan>
+		  		</tspan> 
+		  		
+			</text>
+			<text ng-repeat="station in yonge_line" id="yonge_map" class="yonge-line-color">
+				<tspan x="{{station.x}}%" y="{{station.y}}%" font-family="Frank" font-size="14" class="station">
+		    		O
+		    		<tspan style="baseline-shift: super;">
+			  			{{station.title}}
+			  		</tspan>
+		  		</tspan> 
+		  		
+			</text>
+			<text ng-repeat="station in sheppard_line" id="sheppard_map" class="shepp-line-color">
+				<tspan x="{{station.x}}%" y="{{station.y}}%" font-family="Frank" font-size="14" class="station">
+		    		O
+		    		<tspan style="baseline-shift: super;">
+			  			{{station.title}}
+			  		</tspan>
+		  		</tspan> 
+		  		
+			</text>
+			<text ng-repeat="station in scar_line" id="scar_map" class="scarb-line-color">
+				<tspan x="{{station.x}}%" y="{{station.y}}%" font-family="Frank" font-size="14" class="station">
+		    		O
+		    		<tspan style="baseline-shift: super;">
+			  			{{station.title}}
+			  		</tspan>
+		  		</tspan> 
+		  		
+			</text>
+			
+		</svg>
 	</div>
 	<script type="text/javascript">
+		// $("#yongeButton").click(function{
+		// 	$("#yonge_map").addClass("yonge-line-color");
+		// });
+		// $("#bloorButton").hover(function{
+		// 	$("#bloor_map").addClass("bloor-line-color");
+		// });
+		// $("#scarButton").hover(function{
+		// 	$("#scar_map").addClass("scarb-line-colorr");
+		// });
+		// $("#sheppardButton").hover(function{
+		// 	$("#sheppard_map").addClass("shepp-line-color");
+		// });
 		$(document).ready(function() {
 			$(".fancybox").fancybox();
 			$(".stations").fancybox({
@@ -89,6 +119,8 @@
 		          }
 		      });
 		});
+
+		
 	</script>
 </body>
 </html>

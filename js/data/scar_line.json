@@ -1,8 +1,0 @@
-[
-	{ "id" : "kennedy_station_subway_platform", "title" : "Kennedy Station" },
-    { "id" : "lawrence_east_station", "title" : "Lawrence East Station" },
-    { "id" : "ellesmere_station", "title" : "Ellesmere Station" },
-    { "id" : "midland_station", "title" : "Midland Station" },
-    { "id" : "scarborough_center_station", "title" : "Scarborough Centre Station" },
-    { "id" : "mccowan_station", "title" : "Mccowan Station" }
-]
