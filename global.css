@@ -159,7 +159,7 @@ body{
 	.numbers {
 		font-family: 'Frank', sans-serif;
 		position: absolute;
-		top: 25px;
+		top: 45px;
 		left: 34px;
 		font-size: 6em;
 		color: #fff;
@@ -167,7 +167,7 @@ body{
 	.secondary{
 		font-family: 'Frank', sans-serif;
 		position: absolute;
-		top: 100px;
+		top: 85px;
 		left: 10px;
 		font-size: 0.25em;
 		color: #fff;
